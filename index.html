@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta name="mobile-web-app-capable" content="yes">
-<meta name="apple-mobile-web-app-capable" content="yes">
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shortcut Web Saya</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f4f4f9;
+            background-color: #1e1e2e; /* Warna background gelap keren */
             display: flex;
             justify-content: center;
             padding-top: 50px;
@@ -17,6 +16,8 @@
             display: flex;
             gap: 20px;
             flex-wrap: wrap;
+            max-width: 600px;
+            justify-content: center;
         }
         /* Desain Kotak Shortcut */
         .shortcut-card {
@@ -24,41 +25,61 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            width: 120px;
-            height: 120px;
-            background: white;
-            border-radius: 12px;
+            width: 110px;
+            height: 110px;
+            background: #2b2b3d;
+            border-radius: 16px;
             text-decoration: none;
-            color: #333;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-            transition: transform 0.2s, box-shadow 0.2s;
+            color: white;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+            transition: all 0.2s ease;
         }
         .shortcut-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+            background: #3b3b52;
         }
         .shortcut-card img {
-            width: 48px;
-            height: 48px;
-            margin-bottom: 8px;
+            width: 42px;
+            height: 42px;
+            border-radius: 8px;
+            margin-bottom: 10px;
+        }
+        .shortcut-card span {
+            font-size: 13px;
+            font-weight: 500;
         }
     </style>
 </head>
 <body>
 
 <div class="container">
-    <!-- Shortcut ke Web 1 (Web buatanmu) -->
-<a href="https://www.youtube.com" target="_blank" class="shortcut-card">
-    <img src="https://via.placeholder.com/48" alt="Logo Web 1">
-    <span>YouTube</span>
-</a>
+
+    <!-- 1. Shortcut YouTube -->
+    <a href="https://www.youtube.com" target="_blank" class="shortcut-card">
+        <img src="https://www.google.com/s2/favicons?domain=youtube.com&sz=64" alt="YouTube">
+        <span>YouTube</span>
     </a>
 
-    <!-- Shortcut ke Web Lain (Contoh: GitHub) -->
-    <a href="https://github.com" target="_blank" class="shortcut-card">
-        <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub">
-        <span>GitHub</span>
+    <!-- 2. Shortcut Google -->
+    <a href="https://www.google.com" target="_blank" class="shortcut-card">
+        <img src="https://www.google.com/s2/favicons?domain=google.com&sz=64" alt="Google">
+        <span>Google</span>
     </a>
+
+    <!-- 3. Shortcut Spotify -->
+    <a href="https://open.spotify.com" target="_blank" class="shortcut-card">
+        <img src="https://www.google.com/s2/favicons?domain=spotify.com&sz=64" alt="Spotify">
+        <span>Spotify</span>
+    </a>
+
+    <!-- 4. Shortcut Canva -->
+    <a href="https://www.canva.com" target="_blank" class="shortcut-card">
+        <img src="https://www.google.com/s2/favicons?domain=canva.com&sz=64" alt="Canva">
+        <span>Canva</span>
+    </a>
+
+    <!-- KALAU MAU NAMBAH LAGI, TINGGAL PASTE DI SINI -->
+
 </div>
 
 </body>
