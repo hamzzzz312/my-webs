@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+    <meta charset="UTF-8">
+    <title>Shortcut Web Saya</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            display: flex;
+            justify-content: center;
+            padding-top: 50px;
+        }
+        .container {
+            display: flex;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        /* Desain Kotak Shortcut */
+        .shortcut-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 120px;
+            height: 120px;
+            background: white;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .shortcut-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+        }
+        .shortcut-card img {
+            width: 48px;
+            height: 48px;
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- Shortcut ke Web 1 (Web buatanmu) -->
+    <a href="https://alamat-web-kamu.com" target="_blank" class="shortcut-card">
+        <img src="https://via.placeholder.com/48" alt="Logo Web 1">
+        <span>Web Saya</span>
+    </a>
+
+    <!-- Shortcut ke Web Lain (Contoh: GitHub) -->
+    <a href="https://github.com" target="_blank" class="shortcut-card">
+        <img src="https://github.githubassets.com/favicons/favicon.svg" alt="GitHub">
+        <span>GitHub</span>
+    </a>
+</div>
+
+</body>
+</html>
